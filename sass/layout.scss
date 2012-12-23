@@ -6,11 +6,11 @@ $legacy-support-for-ie7: false;
 // Import Zen Grids.
 @import "zen";
 
-$zen-column-count: 12;
-$zen-gutter-width: 20px;
+$zen-column-count: 4;
+$zen-gutter-width: 10px;
 
 $hero-height: 300px;
-$main-width: 600px;
+$main-width: 750px;
 
 html, body {
   height: 100%;
@@ -32,12 +32,64 @@ html, body {
       background-color: #EEE;
     }
     #content {
+      @include zen-grid-container();
       position: absolute;
       top: $hero-height;
       left: 0;
       bottom: 0;
       width: inherit;
       background-color: #DDD;
+      .tall {
+        height: 66.666%;
+      }
+      .short {
+        height: 33.333%;
+      }
+
+      #one {
+        @include zen-grid-item(1, 1);
+        background-color: #444;
+      }
+      #two {
+        @include zen-grid-item(1, 4);
+        background-color: #555;
+      }
+      #three {
+        @include zen-grid-item(2, 2, right);
+        background-color: #666;
+      }
+      #four {
+        @include zen-clear(right);
+        @include zen-grid-item(2, 2, right);
+        background-color: #777;
+      }
+      #five {
+        @include zen-clear(left);
+        @include zen-grid-item(2, 1);
+        background-color: #888;
+      }
+      #six {
+        @include zen-grid-item(2, 3);
+        background-color: #999;
+      }
+
+      //#one {
+      //  @include zen-grid-item(3, 3);
+      //  background-color: #444;
+      //}
+      //#two {
+      //  @include zen-grid-item(2, 1);
+      //  background-color: #666;
+      //}
+      //#three {
+      //  @include zen-grid-item(1, 1, right);
+      //  background-color: #888;
+      //}
+      //#four {
+      //  @include zen-clear(right);
+      //  @include zen-grid-item(1, 1, right);
+      //  background-color: #AAA;
+      //}
     }
   }
 }
