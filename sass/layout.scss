@@ -9,6 +9,9 @@ $legacy-support-for-ie7: false;
 $zen-column-count: 12;
 $zen-gutter-width: 20px;
 
+$hero-height: 300px;
+$main-width: 600px;
+
 html, body {
   height: 100%;
   margin: 0;
@@ -23,14 +26,14 @@ html, body {
   height: 100%;
   display: table;
   #main {
-    width: 500px;
+    width: $main-width;
     #hero {
-      height: 300px;
+      height: $hero-height;
       background-color: #EEE;
     }
     #content {
       position: absolute;
-      top: 300px;
+      top: $hero-height;
       left: 0;
       bottom: 0;
       width: inherit;
