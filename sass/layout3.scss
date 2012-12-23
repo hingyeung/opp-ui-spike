@@ -1,26 +1,3 @@
-// Ideally, variables should be initialized in a partial. We're setting
-// variables here to make the mixin usage more transparent.
-$legacy-support-for-ie6: false;
-$legacy-support-for-ie7: false;
-
-// Import Zen Grids.
-@import "zen";
-
-$zen-column-count: 4;
-$zen-gutter-width: 10px;
-
-$hero-height: 300px;
-$main-width: 750px;
-
-html, body {
-  height: 100%;
-  margin: 0;
-}
-
-#main, #text {
-  display: table-cell;
-}
-
 #frame {
   width: 100%;
   height: 100%;
@@ -72,24 +49,6 @@ html, body {
         @include zen-grid-item(2, 3);
         background-color: #999;
       }
-
-      //#one {
-      //  @include zen-grid-item(3, 3);
-      //  background-color: #444;
-      //}
-      //#two {
-      //  @include zen-grid-item(2, 1);
-      //  background-color: #666;
-      //}
-      //#three {
-      //  @include zen-grid-item(1, 1, right);
-      //  background-color: #888;
-      //}
-      //#four {
-      //  @include zen-clear(right);
-      //  @include zen-grid-item(1, 1, right);
-      //  background-color: #AAA;
-      //}
     }
   }
 }

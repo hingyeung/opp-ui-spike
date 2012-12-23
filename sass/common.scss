@@ -1,5 +1,22 @@
-// Ideally, variables should be initialized in a partial. We're setting it here
-// to make the mixin usage more transparent.
-$gutter-width: 10px;
+// Ideally, variables should be initialized in a partial. We're setting
+// variables here to make the mixin usage more transparent.
+$legacy-support-for-ie6: false;
+$legacy-support-for-ie7: false;
 
+// Import Zen Grids.
+@import "zen";
 
+$zen-column-count: 4;
+$zen-gutter-width: 10px;
+
+$hero-height: 300px;
+$main-width: 750px;
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+#main, #text {
+  display: table-cell;
+}
