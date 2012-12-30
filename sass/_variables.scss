@@ -7,4 +7,5 @@ $legacy-support-for-ie7: false;
 $zen-column-count: 4;
 $zen-gutter-width: 10px;
 
-$hero-height: 300px;
+$layout-top-row-height: 40%;
+$layout-bottom-row-height: 100% - $layout-top-row-height;

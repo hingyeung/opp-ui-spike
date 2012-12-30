@@ -15,11 +15,11 @@
     @include zen-grid-container;
 
     #hero {
-      height: 40%;
+      height: $layout-top-row-height;
       @include zen-grid-item(3, 1);
     }
     #content {
-      height: 60%;
+      height: $layout-bottom-row-height;
       @include zen-clear(left);
       @include zen-grid-item(3, 1);
       @include zen-nested-container();
@@ -53,6 +53,7 @@
   }
 
   #text {
+    // couldn't get this working with zen grid
     //@include zen-grid-item(1, 1, right);
     position: absolute;
     background-color: #CCC;

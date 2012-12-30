@@ -1,11 +1,4 @@
-//@import "common";
 @import "variables";
-
-//@media screen and (min-width: 480px) {
-//  #frame {
-//
-//  }
-//}
 
 @mixin tall-cell {
   height: 50%;
@@ -21,10 +14,10 @@
     @include zen-grid-container;
     #hero {
       @include zen-grid-item(4, 1);
-      height: 40%;
+      height: $layout-top-row-height;
     }
     #content {
-      height: 60%;
+      height: $layout-bottom-row-height;
       @include zen-clear(left);
       @include zen-grid-item(2, 1);
       @include zen-nested-container();
@@ -66,7 +59,7 @@
     #text {
       @include zen-grid-item(2, 3);
       background-color: #CCC;
-      height: 60%;
+      height: $layout-bottom-row-height;
     }
   }
 }
