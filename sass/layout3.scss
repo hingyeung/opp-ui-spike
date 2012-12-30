@@ -17,7 +17,6 @@
     #hero {
       height: 40%;
       @include zen-grid-item(3, 1);
-      background-color: #EEE;
     }
     #content {
       height: 60%;
@@ -26,34 +25,28 @@
       @include zen-nested-container();
       #one {
         @include zen-grid-item(1, 1);
-        background-color: #444;
         @include tall-cell;
       }
       #two {
         @include zen-grid-item(1, 4);
-        background-color: #555;
         @include tall-cell;
       }
       #three {
         @include zen-grid-item(2, 2, right);
-        background-color: #666;
         @include short-cell;
       }
       #four {
         @include zen-clear(right);
         @include zen-grid-item(2, 2, right);
-        background-color: #777;
         @include short-cell;
       }
       #five {
         @include zen-clear(left);
         @include zen-grid-item(2, 1);
-        background-color: #888;
         @include short-cell;
       }
       #six {
         @include zen-grid-item(2, 3);
-        background-color: #999;
         @include short-cell;
       }
     }

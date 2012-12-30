@@ -1,0 +1,21 @@
+@import "variables";
+
+$cell-height: 100px;
+@media screen and (max-width: 479px) {
+  #frame {
+    height: 100%;
+
+    #hero {
+      height: $cell-height * 2;
+    }
+
+    #content {
+      .content-cell {
+        height: $cell-height;
+      }
+    }
+    #text {
+      display: none;
+    }
+  }
+}

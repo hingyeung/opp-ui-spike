@@ -2,3 +2,34 @@ html, body {
   height: 100%;
   margin: 0;
 }
+
+#frame {
+  #hero {
+    background-color: #EEE;
+  }
+  #content {
+    #one {
+      background-color: #444;
+    }
+
+    #two {
+      background-color: #555;
+    }
+
+    #three {
+      background-color: #666;
+    }
+
+    #four {
+      background-color: #777;
+    }
+
+    #five {
+      background-color: #888;
+    }
+
+    #six {
+      background-color: #999;
+    }
+  }
+}
