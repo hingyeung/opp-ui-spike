@@ -27,7 +27,7 @@
     #content {
       height: 60%;
       @include zen-clear(left);
-      @include zen-grid-item(3, 1);
+      @include zen-grid-item(2, 1);
       @include zen-nested-container();
       background-color: #DDD;
       #one {
@@ -71,7 +71,7 @@
     }
 
     #text {
-      @include zen-grid-item(1, 1, right);
+      @include zen-grid-item(2, 3);
       background-color: #CCC;
       height: 100%;
     }
