@@ -1,0 +1,10 @@
+$legacy-support-for-ie6: false;
+$legacy-support-for-ie7: false;
+
+// Import Zen Grids.
+@import "zen";
+
+$zen-column-count: 4;
+$zen-gutter-width: 10px;
+
+$hero-height: 300px;

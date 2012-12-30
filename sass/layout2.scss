@@ -1,0 +1,92 @@
+//@import "common";
+@import "variables";
+
+$main-width: 100%;
+
+@media screen and (min-width: 480px) {
+  #frame {
+    #main {
+      width: $main-width;
+      #hero {
+        height: $hero-height;
+        background-color: red;
+      }
+
+      #content {
+        position: absolute;
+        top: $hero-height;
+        left: 0;
+        bottom: 0;
+        width: 50%;
+        background-color: #DDD;
+      }
+    }
+
+    #text {
+      background-color: #CCC;
+    }
+  }
+}
+
+@mixin tall-cell {
+  height: 50%;
+}
+
+@mixin short-cell {
+  height: 25%;
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  #frame {
+    #main {
+      #content {
+        #one {
+          @include zen-grid-item(2, 1);
+          background-color: #444;
+          @include tall-cell;
+        }
+
+        #two {
+          @include zen-grid-item(2, 1, right);
+          background-color: #555;
+          @include short-cell;
+        }
+
+        #three {
+          @include zen-clear(right);
+          @include zen-grid-item(2, 1, right);
+          background-color: #666;
+          @include short-cell;
+        }
+
+        #four {
+          @include zen-clear(left);
+          @include zen-grid-item(4, 1);
+          background-color: #777;
+          @include short-cell;
+        }
+
+        #five {
+          @include zen-clear(left);
+          @include zen-grid-item(2, 1);
+          background-color: #888;
+          @include short-cell;
+        }
+
+        #six {
+          @include zen-grid-item(2, 3);
+          background-color: #999;
+          @include short-cell;
+        }
+      }
+    }
+  }
+
+  #text {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: $hero-height + 1;
+    width: 50%;
+  }
+}
