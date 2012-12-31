@@ -1,11 +1,11 @@
 //@import "common";
 @import "variables";
 
-@mixin tall-cell {
+@mixin tall-in-six-cell {
   height: 66.666%;
 }
 
-@mixin short-cell {
+@mixin short-in-six-cell {
   height: 33.333%;
 }
 
@@ -23,31 +23,34 @@
       @include zen-clear(left);
       @include zen-grid-item(3, 1);
       @include zen-nested-container();
+    }
+
+    .six-cell-content {
       #one {
         @include zen-grid-item(1, 1);
-        @include tall-cell;
+        @include tall-in-six-cell;
       }
       #two {
         @include zen-grid-item(1, 4);
-        @include tall-cell;
+        @include tall-in-six-cell;
       }
       #three {
         @include zen-grid-item(2, 2, right);
-        @include short-cell;
+        @include short-in-six-cell;
       }
       #four {
         @include zen-clear(right);
         @include zen-grid-item(2, 2, right);
-        @include short-cell;
+        @include short-in-six-cell;
       }
       #five {
         @include zen-clear(left);
         @include zen-grid-item(2, 1);
-        @include short-cell;
+        @include short-in-six-cell;
       }
       #six {
         @include zen-grid-item(2, 3);
-        @include short-cell;
+        @include short-in-six-cell;
       }
     }
   }

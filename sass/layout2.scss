@@ -1,11 +1,19 @@
 @import "variables";
 
-@mixin tall-cell {
+@mixin tall-in-six-cell {
   height: 50%;
 }
 
-@mixin short-cell {
+@mixin short-in-six-cell {
   height: 25%;
+}
+
+@mixin tall-in-eight-cell {
+  height: 33.333%;
+}
+
+@mixin short-in-eight-cell {
+  height: 16.666%;
 }
 
 @media screen and (min-width: 480px) and (max-width: 767px) {
@@ -21,38 +29,87 @@
       @include zen-clear(left);
       @include zen-grid-item(2, 1);
       @include zen-nested-container();
-      background-color: #DDD;
+    }
+
+    .six-cell-content {
       #one {
         @include zen-grid-item(2, 1);
-        @include tall-cell;
+        @include tall-in-six-cell;
       }
 
       #two {
         @include zen-grid-item(2, 1, right);
-        @include short-cell;
+        @include short-in-six-cell;
       }
 
       #three {
         @include zen-clear(right);
         @include zen-grid-item(2, 1, right);
-        @include short-cell;
+        @include short-in-six-cell;
       }
 
       #four {
         @include zen-clear(left);
         @include zen-grid-item(4, 1);
-        @include short-cell;
+        @include short-in-six-cell;
       }
 
       #five {
         @include zen-clear(left);
         @include zen-grid-item(2, 1);
-        @include short-cell;
+        @include short-in-six-cell;
       }
 
       #six {
         @include zen-grid-item(2, 3);
-        @include short-cell;
+        @include short-in-six-cell;
+      }
+    }
+
+    .eight-cell-content {
+      #one {
+        @include zen-grid-item(2, 1);
+        @include tall-in-eight-cell;
+      }
+
+      #two {
+        @include zen-grid-item(2, 1, right);
+        @include short-in-eight-cell;
+      }
+
+      #three {
+        @include zen-clear(right);
+        @include zen-grid-item(2, 1, right);
+        @include short-in-eight-cell;
+      }
+
+      #four {
+        @include zen-clear(left);
+        @include zen-grid-item(4, 1);
+        @include short-in-eight-cell;
+      }
+
+      #five {
+        @include zen-clear(left);
+        @include zen-grid-item(2, 1);
+        @include short-in-eight-cell;
+      }
+
+      #six {
+        @include zen-grid-item(2, 1, right);
+        @include tall-in-eight-cell;
+      }
+
+      #seven {
+        @include zen-clear(left);
+        @include zen-grid-item(2, 1);
+        @include short-in-eight-cell;
+      }
+
+      #eight {
+        @include zen-clear(left);
+        @include zen-grid-item(4, 1);
+        @include short-in-eight-cell;
       }
     }
 
