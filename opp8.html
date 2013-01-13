@@ -5,6 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0,  minimum-scale=1.0, maximum-scale=1.0, user-scalable=0">
     <title>OPP</title>
     <link rel="stylesheet" href="stylesheets/styles.css" media="all">
+    <!--[if !IE]><!-->
+    <script type="text/javascript" src="http://cubiq.org/dropbox/iscroll4/src/iscroll.js"></script>
+    <!--<![endif]-->
+    <!--[if IE]><!-->
+    <style type="text/css">
+        #text {overflow-y: scroll; overflow-x: hidden;}
+    </style>
+    <!--<![endif]-->
 </head>
 <body>
 
@@ -20,7 +28,20 @@
         <div id="seven" class="content-cell">7</div>
         <div id="eight" class="content-cell">8</div>
     </div>
-    <div id="text">Text</div>
+    <div id="text"><div id="scroller">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed molestie lorem at arcu sodales consectetur. Maecenas vitae viverra quam. Curabitur a mollis dolor. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Praesent quis blandit ligula. Etiam bibendum metus vitae magna vestibulum suscipit. Vestibulum tincidunt pretium convallis. Sed porta porttitor ligula vel tempus. Sed velit ante, pretium at convallis tempor, imperdiet a nibh.
+
+    Ut sollicitudin iaculis libero. Sed mauris mauris, placerat id pharetra at, dapibus at turpis. In at magna sapien. Praesent non tempus purus. Nam eleifend est sed quam venenatis id tristique massa ultricies. Pellentesque consequat, purus ut porta fringilla, purus orci tincidunt risus, lacinia vestibulum ipsum mi et leo. Vestibulum tristique egestas magna. Sed condimentum enim eu elit fringilla eleifend. Aliquam tortor nisi, sagittis vel bibendum quis, iaculis ac urna. Praesent consectetur, lectus ac ultricies faucibus, velit est commodo mauris, sed bibendum lacus leo ac nunc.
+
+    Suspendisse sit amet rutrum arcu. Vestibulum quis risus vitae velit tristique rhoncus. Praesent sodales erat vitae urna luctus suscipit. Pellentesque bibendum placerat purus vitae pretium. Cras laoreet tortor sodales mi dapibus aliquam. Suspendisse porta semper erat ut iaculis. Curabitur vitae lacus massa. Sed et dignissim lorem. Mauris id est justo. Fusce nisl tortor, luctus sit amet imperdiet sit amet, feugiat eget diam. In egestas, odio sit amet eleifend vehicula, metus neque porttitor sapien, ut sagittis enim neque pretium elit.
+
+    Integer commodo porttitor convallis. Nunc lobortis blandit lectus sit amet fringilla. Phasellus ligula sem, convallis sagittis suscipit at, ultricies non risus. Nam eu justo sit amet felis aliquam commodo vel non augue. Ut elementum, est non bibendum pretium, nisi sapien fringilla nisi, id aliquam ante diam at risus. Fusce quis egestas justo. Vestibulum imperdiet vestibulum vestibulum. Donec nulla nisi, porta sit amet vestibulum a, rhoncus sit amet nunc. Duis luctus posuere vehicula. Mauris vulputate luctus sem, eu semper tortor faucibus ut. Mauris ipsum tellus, blandit tristique convallis ac, consectetur a leo.
+
+    Duis non quam non lorem tempus semper. Sed erat diam, porta ac adipiscing sit amet, pharetra vitae massa. Morbi interdum bibendum eros, vel faucibus orci viverra dictum. Morbi nulla dui, viverra nec volutpat ut, imperdiet eu odio. Morbi pretium arcu non ligula ultrices fermentum. Suspendisse varius aliquam aliquet. Maecenas egestas, elit vitae consectetur dapibus, quam mauris volutpat dolor, sit amet viverra lacus erat ac odio. Vestibulum elit urna, dignissim nec porttitor placerat, porttitor non massa. Etiam accumsan volutpat mi a pellentesque. Cras hendrerit accumsan urna, nec ullamcorper elit commodo nec. Integer porta tincidunt mauris, in venenatis erat accumsan nec. In a nibh justo, at sollicitudin ligula. Ut tempor pulvinar nibh at aliquam</div></div>
 </div>
+<!--[if !IE]><!-->
+<script type="text/javascript">
+    new iScroll("text");
+</script>
+<!--<![endif]-->
 </body>
 </html>
